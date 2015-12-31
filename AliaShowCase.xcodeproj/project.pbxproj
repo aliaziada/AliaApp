@@ -10,8 +10,16 @@
 		D877F9D61C357250007F754D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D877F9D51C357250007F754D /* AppDelegate.swift */; };
 		D877F9D81C357250007F754D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D877F9D71C357250007F754D /* ViewController.swift */; };
 		D877F9DB1C357250007F754D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D877F9D91C357250007F754D /* Main.storyboard */; };
-		D877F9DD1C357250007F754D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D877F9DC1C357250007F754D /* Assets.xcassets */; };
 		D877F9E01C357251007F754D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D877F9DE1C357250007F754D /* LaunchScreen.storyboard */; };
+		D877F9EF1C3572BE007F754D /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D877F9EB1C3572BE007F754D /* NotoSans-Bold.ttf */; };
+		D877F9F01C3572BE007F754D /* NotoSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D877F9EC1C3572BE007F754D /* NotoSans-BoldItalic.ttf */; };
+		D877F9F11C3572BE007F754D /* NotoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D877F9ED1C3572BE007F754D /* NotoSans-Italic.ttf */; };
+		D877F9F21C3572BE007F754D /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D877F9EE1C3572BE007F754D /* NotoSans-Regular.ttf */; };
+		D877F9F41C3578D0007F754D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D877F9F31C3578D0007F754D /* Assets.xcassets */; };
+		D877F9F61C357C43007F754D /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D877F9F51C357C43007F754D /* MaterialView.swift */; };
+		D877F9F91C357CF2007F754D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D877F9F81C357CF2007F754D /* Constants.swift */; };
+		D877F9FB1C3586BC007F754D /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D877F9FA1C3586BC007F754D /* MaterialButton.swift */; };
+		D877F9FD1C358A6D007F754D /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D877F9FC1C358A6D007F754D /* MaterialTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,9 +27,17 @@
 		D877F9D51C357250007F754D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D877F9D71C357250007F754D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D877F9DA1C357250007F754D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D877F9DC1C357250007F754D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D877F9DF1C357251007F754D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D877F9E11C357251007F754D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D877F9EB1C3572BE007F754D /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Bold.ttf"; sourceTree = "<group>"; };
+		D877F9EC1C3572BE007F754D /* NotoSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		D877F9ED1C3572BE007F754D /* NotoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Italic.ttf"; sourceTree = "<group>"; };
+		D877F9EE1C3572BE007F754D /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Regular.ttf"; sourceTree = "<group>"; };
+		D877F9F31C3578D0007F754D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D877F9F51C357C43007F754D /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		D877F9F81C357CF2007F754D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D877F9FA1C3586BC007F754D /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
+		D877F9FC1C358A6D007F754D /* MaterialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +70,62 @@
 		D877F9D41C357250007F754D /* AliaShowCase */ = {
 			isa = PBXGroup;
 			children = (
+				D877F9E91C357287007F754D /* Model */,
+				D877F9E81C35727D007F754D /* Controller */,
+				D877F9E71C35726B007F754D /* View */,
+				D877F9EA1C35728F007F754D /* Resources */,
+				D877F9F71C357CC6007F754D /* Utility */,
 				D877F9D51C357250007F754D /* AppDelegate.swift */,
 				D877F9D71C357250007F754D /* ViewController.swift */,
+				D877F9F31C3578D0007F754D /* Assets.xcassets */,
 				D877F9D91C357250007F754D /* Main.storyboard */,
-				D877F9DC1C357250007F754D /* Assets.xcassets */,
 				D877F9DE1C357250007F754D /* LaunchScreen.storyboard */,
 				D877F9E11C357251007F754D /* Info.plist */,
 			);
 			path = AliaShowCase;
+			sourceTree = "<group>";
+		};
+		D877F9E71C35726B007F754D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D877F9F51C357C43007F754D /* MaterialView.swift */,
+				D877F9FA1C3586BC007F754D /* MaterialButton.swift */,
+				D877F9FC1C358A6D007F754D /* MaterialTextField.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D877F9E81C35727D007F754D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		D877F9E91C357287007F754D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D877F9EA1C35728F007F754D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D877F9EB1C3572BE007F754D /* NotoSans-Bold.ttf */,
+				D877F9EC1C3572BE007F754D /* NotoSans-BoldItalic.ttf */,
+				D877F9ED1C3572BE007F754D /* NotoSans-Italic.ttf */,
+				D877F9EE1C3572BE007F754D /* NotoSans-Regular.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D877F9F71C357CC6007F754D /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				D877F9F81C357CF2007F754D /* Constants.swift */,
+			);
+			name = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +186,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D877F9EF1C3572BE007F754D /* NotoSans-Bold.ttf in Resources */,
 				D877F9E01C357251007F754D /* LaunchScreen.storyboard in Resources */,
-				D877F9DD1C357250007F754D /* Assets.xcassets in Resources */,
+				D877F9F01C3572BE007F754D /* NotoSans-BoldItalic.ttf in Resources */,
+				D877F9F11C3572BE007F754D /* NotoSans-Italic.ttf in Resources */,
+				D877F9F41C3578D0007F754D /* Assets.xcassets in Resources */,
 				D877F9DB1C357250007F754D /* Main.storyboard in Resources */,
+				D877F9F21C3572BE007F754D /* NotoSans-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +203,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D877F9FD1C358A6D007F754D /* MaterialTextField.swift in Sources */,
+				D877F9F61C357C43007F754D /* MaterialView.swift in Sources */,
 				D877F9D81C357250007F754D /* ViewController.swift in Sources */,
 				D877F9D61C357250007F754D /* AppDelegate.swift in Sources */,
+				D877F9F91C357CF2007F754D /* Constants.swift in Sources */,
+				D877F9FB1C3586BC007F754D /* MaterialButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +358,7 @@
 				D877F9E61C357251007F754D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
