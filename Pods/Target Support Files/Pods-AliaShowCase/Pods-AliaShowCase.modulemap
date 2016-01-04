@@ -1,0 +1,6 @@
+framework module Pods_AliaShowCase {
+  umbrella header "Pods-AliaShowCase-umbrella.h"
+
+  export *
+  module * { export * }
+}
