@@ -232,7 +232,7 @@
                                                 <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w5X-fV-gQ0" userLabel="ContainerView" customClass="MaterialView" customModule="AliaShowCase" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="8" width="560" height="329"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="7Tg-QO-Kdu">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="7Tg-QO-Kdu">
                                                             <rect key="frame" x="8" y="8" width="320" height="314"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zdE-Gy-vU9">
@@ -293,7 +293,7 @@
                                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                                     <dataDetectorType key="dataDetectorTypes" link="YES"/>
                                                                 </textView>
-                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="pokemon" translatesAutoresizingMaskIntoConstraints="NO" id="yOr-Eq-gjX">
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="pokemon" translatesAutoresizingMaskIntoConstraints="NO" id="yOr-Eq-gjX">
                                                                     <rect key="frame" x="0.0" y="130" width="320" height="184"/>
                                                                     <animations/>
                                                                 </imageView>
@@ -323,8 +323,11 @@
                                         <animations/>
                                         <color key="backgroundColor" red="0.90795272439999997" green="0.90795272439999997" blue="0.90795272439999997" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
+                                            <outlet property="descTxt" destination="wJJ-4o-fad" id="xLn-xs-35z"/>
+                                            <outlet property="likesLbl" destination="51N-6Q-z08" id="xeP-d1-zGl"/>
                                             <outlet property="profileImg" destination="iy3-tj-QLf" id="oGb-mq-RSu"/>
                                             <outlet property="showCaseImg" destination="yOr-Eq-gjX" id="VPJ-BV-DTa"/>
+                                            <outlet property="usernameLbl" destination="f4m-pg-LvD" id="AMt-rv-yWD"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

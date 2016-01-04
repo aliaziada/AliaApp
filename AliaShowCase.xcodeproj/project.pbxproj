@@ -11,6 +11,7 @@
 		D80A53781C3A8A25005544B1 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80A53771C3A8A25005544B1 /* DataService.swift */; };
 		D80A537A1C3AAB6A005544B1 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80A53791C3AAB6A005544B1 /* PostCell.swift */; };
 		D80A537C1C3AB069005544B1 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80A537B1C3AB069005544B1 /* FeedVC.swift */; };
+		D80A537E1C3AD497005544B1 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80A537D1C3AD497005544B1 /* Post.swift */; };
 		D83B25ED1C3A74C2007460ED /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D83B25EA1C3A74C2007460ED /* Bolts.framework */; };
 		D83B25EE1C3A74C2007460ED /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D83B25EB1C3A74C2007460ED /* FBSDKCoreKit.framework */; };
 		D83B25EF1C3A74C2007460ED /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D83B25EC1C3A74C2007460ED /* FBSDKLoginKit.framework */; };
@@ -35,6 +36,7 @@
 		D80A53771C3A8A25005544B1 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		D80A53791C3AAB6A005544B1 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		D80A537B1C3AB069005544B1 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		D80A537D1C3AD497005544B1 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		D83B25EA1C3A74C2007460ED /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		D83B25EB1C3A74C2007460ED /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		D83B25EC1C3A74C2007460ED /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 		D877F9E91C357287007F754D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D80A537D1C3AD497005544B1 /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				D877F9F91C357CF2007F754D /* Constants.swift in Sources */,
 				D877F9FB1C3586BC007F754D /* MaterialButton.swift in Sources */,
 				D80A537A1C3AAB6A005544B1 /* PostCell.swift in Sources */,
+				D80A537E1C3AD497005544B1 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

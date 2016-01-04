@@ -9,8 +9,13 @@
 import UIKit
 
 class PostCell: UITableViewCell {
+    
     @IBOutlet weak var profileImg: UIImageView!
     @IBOutlet weak var showCaseImg: UIImageView!
+    
+    @IBOutlet weak var usernameLbl: UILabel!
+    @IBOutlet weak var likesLbl: UILabel!
+    @IBOutlet weak var descTxt: UITextView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -27,6 +32,12 @@ class PostCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func configureCell (post: Post){
+        likesLbl.text = "\(post.likes)"
+        //usernameLbl.text = post.username
+        descTxt.text = post.postDescription
     }
 
 }

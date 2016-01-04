@@ -42,6 +42,8 @@ class ViewController: UIViewController {
                             print("login faild. \(error)")
                         }else{
                             print("Logged Successfully ")
+                            let user = ["provider": authData.provider!]
+                            DataService.ds.createFirebaseUser(authData.uid, user: user)
                             NSUserDefaults.standardUserDefaults().setValue(authData.uid, forKey: KEY_UID)
                             self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
                         }
@@ -59,10 +61,13 @@ class ViewController: UIViewController {
                     if error.code == STATUS_ACOUNT_NONEXIST {
                         DataService.ds.REF_BASE.createUser(email, password: pwd, withValueCompletionBlock: { err,result in
                             if err != nil {
-                                self.showErrorAlert("Coundn't create account", msg: "problem createing acount \(err.debugDescription)")
+                                self.showErrorAlert("Coundn't create account", msg: "problem createing acount")
                             }else{
                                 NSUserDefaults.standardUserDefaults().setValue(result[KEY_UID], forKey: KEY_UID)
-                                DataService.ds.REF_BASE.authUser(email, password: pwd, withCompletionBlock: nil)
+                                DataService.ds.REF_BASE.authUser(email, password: pwd, withCompletionBlock: {err,authData in
+                                    let user = ["provider": authData.provider!]
+                                    DataService.ds.createFirebaseUser(authData.uid, user: user)
+                                })
                                 self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
                             }
                         })

@@ -25,4 +25,8 @@ class DataService {
     var REF_USERS: Firebase {
         return _REF_USERS
     }
+    
+    func createFirebaseUser(uid: String,user: Dictionary <String,String>){
+        _REF_USERS.childByAppendingPath(uid).setValue(user)
+    }
 }
