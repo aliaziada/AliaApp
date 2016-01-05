@@ -28,6 +28,7 @@
 		D877F9F91C357CF2007F754D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D877F9F81C357CF2007F754D /* Constants.swift */; };
 		D877F9FB1C3586BC007F754D /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D877F9FA1C3586BC007F754D /* MaterialButton.swift */; };
 		D877F9FD1C358A6D007F754D /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D877F9FC1C358A6D007F754D /* MaterialTextField.swift */; };
+		D8D3929B1C3C157E0078F7E1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D3929A1C3C157E0078F7E1 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		D877F9F81C357CF2007F754D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D877F9FA1C3586BC007F754D /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
 		D877F9FC1C358A6D007F754D /* MaterialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
+		D8D3929A1C3C157E0078F7E1 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FBD05257169E653229528EDE /* Pods_AliaShowCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AliaShowCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -169,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				D80A537D1C3AD497005544B1 /* Post.swift */,
+				D8D3929A1C3C157E0078F7E1 /* User.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				D877F9FB1C3586BC007F754D /* MaterialButton.swift in Sources */,
 				D80A537A1C3AAB6A005544B1 /* PostCell.swift in Sources */,
 				D80A537E1C3AD497005544B1 /* Post.swift in Sources */,
+				D8D3929B1C3C157E0078F7E1 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
