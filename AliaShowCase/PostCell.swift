@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class PostCell: UITableViewCell {
     
@@ -16,6 +17,12 @@ class PostCell: UITableViewCell {
     @IBOutlet weak var usernameLbl: UILabel!
     @IBOutlet weak var likesLbl: UILabel!
     @IBOutlet weak var descTxt: UITextView!
+    
+    var post: Post!
+    
+    var request: Request?
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -34,10 +41,29 @@ class PostCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func configureCell (post: Post){
+    func configureCell (post: Post,img: UIImage?){
+        self.post = post
+        
         likesLbl.text = "\(post.likes)"
         //usernameLbl.text = post.username
         descTxt.text = post.postDescription
+        
+        if post.imgUrl != nil {
+            if img != nil {
+                self.showCaseImg.image = img
+            }else{
+                Alamofire.request(.GET, post.imgUrl!).validate(contentType: ["image/*"]).response(completionHandler: {resquest, response,data,err in
+                    if err == nil {
+                        let image = UIImage(data: data!)!
+                        FeedVC.imageCache.setObject(image, forKey: self.post.imgUrl!)
+                        self.showCaseImg.hidden = false
+                        self.showCaseImg.image = image
+                    }
+                })
+            }
+        }else{
+            self.showCaseImg.hidden = true
+        }
     }
 
 }

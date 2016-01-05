@@ -13,8 +13,10 @@
             <string>NotoSans-Bold</string>
             <string>NotoSans-Bold</string>
             <string>NotoSans-Bold</string>
+            <string>NotoSans-Bold</string>
         </mutableArray>
         <mutableArray key="NotoSans-Regular.ttf">
+            <string>NotoSans</string>
             <string>NotoSans</string>
             <string>NotoSans</string>
             <string>NotoSans</string>
@@ -217,13 +219,68 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="346" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6OL-3g-Z9Z">
-                                <rect key="frame" x="20" y="64" width="560" height="536"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9gY-ME-aZw" customClass="MaterialView" customModule="AliaShowCase" customModuleProvider="target">
+                                <rect key="frame" x="20" y="72" width="560" height="53"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cny-6B-q7r">
+                                        <rect key="frame" x="8" y="8" width="544" height="37"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Talk about your app" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q1n-GO-1tn" customClass="MaterialTextField" customModule="AliaShowCase" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="437" height="37"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera" translatesAutoresizingMaskIntoConstraints="NO" id="BJs-df-HCt">
+                                                <rect key="frame" x="447" y="0.0" width="37" height="37"/>
+                                                <animations/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="37" id="D6f-PS-6dg"/>
+                                                    <constraint firstAttribute="width" constant="37" id="gsU-IF-anU"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="vfX-LE-1yP" appends="YES" id="eSI-Kt-oy8"/>
+                                                </connections>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GkS-ab-43J" customClass="MaterialButton" customModule="AliaShowCase" customModuleProvider="target">
+                                                <rect key="frame" x="494" y="0.0" width="50" height="37"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="0.070588235294117646" green="0.13725490196078433" blue="0.30196078431372547" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="MPS-8m-XYz"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="14"/>
+                                                <state key="normal" title="POST">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="makePostTapped:" destination="Za9-ol-dUG" eventType="touchUpInside" id="kbV-xL-8SL"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <animations/>
+                                    </stackView>
+                                </subviews>
                                 <animations/>
-                                <color key="backgroundColor" red="0.90795272439999997" green="0.90795272439999997" blue="0.90795272439999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="cny-6B-q7r" firstAttribute="top" secondItem="9gY-ME-aZw" secondAttribute="topMargin" id="8Aq-K6-8t2"/>
+                                    <constraint firstItem="cny-6B-q7r" firstAttribute="leading" secondItem="9gY-ME-aZw" secondAttribute="leadingMargin" id="Low-26-1N8"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="cny-6B-q7r" secondAttribute="bottom" id="g3m-5e-a1H"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="cny-6B-q7r" secondAttribute="trailing" id="nRD-el-nvu"/>
+                                    <constraint firstAttribute="height" constant="53" id="u6w-ZS-gn3"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="346" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6OL-3g-Z9Z">
+                                <rect key="frame" x="20" y="133" width="560" height="467"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="346" id="jbw-zi-jkW" customClass="PostCell" customModule="AliaShowCase" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="92" width="560" height="346"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PostCell" id="jbw-zi-jkW" customClass="PostCell" customModule="AliaShowCase" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="560" height="346"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jbw-zi-jkW" id="572-l8-ch3">
                                             <rect key="frame" x="0.0" y="0.0" width="560" height="346"/>
@@ -232,7 +289,7 @@
                                                 <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w5X-fV-gQ0" userLabel="ContainerView" customClass="MaterialView" customModule="AliaShowCase" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="8" width="560" height="329"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="7Tg-QO-Kdu">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7Tg-QO-Kdu">
                                                             <rect key="frame" x="8" y="8" width="320" height="314"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zdE-Gy-vU9">
@@ -281,7 +338,7 @@
                                                                     <animations/>
                                                                 </stackView>
                                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wJJ-4o-fad">
-                                                                    <rect key="frame" x="0.0" y="55" width="320" height="70"/>
+                                                                    <rect key="frame" x="0.0" y="58" width="320" height="70"/>
                                                                     <animations/>
                                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <constraints>
@@ -294,7 +351,7 @@
                                                                     <dataDetectorType key="dataDetectorTypes" link="YES"/>
                                                                 </textView>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="pokemon" translatesAutoresizingMaskIntoConstraints="NO" id="yOr-Eq-gjX">
-                                                                    <rect key="frame" x="0.0" y="130" width="320" height="184"/>
+                                                                    <rect key="frame" x="0.0" y="136" width="320" height="178"/>
                                                                     <animations/>
                                                                 </imageView>
                                                             </subviews>
@@ -336,18 +393,34 @@
                         <animations/>
                         <color key="backgroundColor" red="0.90795272439999997" green="0.90795272439999997" blue="0.90795272439999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="6OL-3g-Z9Z" firstAttribute="top" secondItem="9gY-ME-aZw" secondAttribute="bottom" constant="8" id="2Nw-0y-rci"/>
+                            <constraint firstItem="9gY-ME-aZw" firstAttribute="top" secondItem="8ff-ab-Uqy" secondAttribute="bottom" constant="8" id="PCk-x4-jPq"/>
                             <constraint firstItem="6OL-3g-Z9Z" firstAttribute="leading" secondItem="gkc-Z6-Axv" secondAttribute="leadingMargin" id="UHR-iZ-p5u"/>
+                            <constraint firstItem="9gY-ME-aZw" firstAttribute="leading" secondItem="gkc-Z6-Axv" secondAttribute="leadingMargin" id="UJr-Fc-AJv"/>
                             <constraint firstItem="6OL-3g-Z9Z" firstAttribute="trailing" secondItem="gkc-Z6-Axv" secondAttribute="trailingMargin" id="aST-eh-nXd"/>
+                            <constraint firstItem="9gY-ME-aZw" firstAttribute="trailing" secondItem="gkc-Z6-Axv" secondAttribute="trailingMargin" id="c3E-9d-ZTN"/>
                             <constraint firstItem="6OL-3g-Z9Z" firstAttribute="top" secondItem="8ff-ab-Uqy" secondAttribute="bottom" id="i0a-aF-vKO"/>
                             <constraint firstItem="O2Y-Zn-lSH" firstAttribute="top" secondItem="6OL-3g-Z9Z" secondAttribute="bottom" id="mVo-Dg-wxC"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="i0a-aF-vKO"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="wLc-z8-Jmf"/>
                     <connections>
+                        <outlet property="imageSelectorImage" destination="BJs-df-HCt" id="PNO-0W-9Cx"/>
+                        <outlet property="postField" destination="Q1n-GO-1tn" id="HJg-3q-cJY"/>
                         <outlet property="tableView" destination="6OL-3g-Z9Z" id="iK4-zH-zJe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LlA-L4-eYK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="vfX-LE-1yP">
+                    <connections>
+                        <action selector="selectImageTapped:" destination="Za9-ol-dUG" id="CCN-hG-YUz"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1766" y="322"/>
         </scene>
@@ -373,6 +446,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="camera" width="50" height="50"/>
         <image name="code-icon-logo" width="318" height="281"/>
         <image name="fb-icon" width="65" height="65"/>
         <image name="heart-empty" width="150" height="147"/>
